@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Car Dekho</title>
+  </head>
+  <body>
+    <h1 class="text-center">Get price of second-hand cars here </h1>
+
+
+
+    <form action="/" method="post">
+    <div class="container-fluid" style="margin-left:400px;">
+
+  <div class="form-row align-items-center">
+    <div class="col-auto my-1">
+
+     <div class="form-group col-md-12">
+      <label for="inputEmail4">KM car driven :</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" name="km_driven">
+    </div>
+     <div class="form-group col-md-12">
+      <label for="inputEmail4">Year Old</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" name="year_old">
+    </div>
+    <div class="form-group col-md-12">
+      <label class="mr-sm-2" for="inlineFormCustomSelect">Fule Type</label>
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="fuel">
+        <option selected>Choose...</option>
+        <option value="0">Petrol</option>
+        <option value="1">Diesel</option>
+        <option value="2">CNG</option>
+          <option value="3">LPG</option>
+      </select>
+       </div>
+          <div class="form-group col-md-12">
+       <label class="mr-sm-2" for="inlineFormCustomSelect">Seller Type</label>
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="seller_type">
+        <option selected>Choose...</option>
+        <option value="0">Individual</option>
+        <option value="1">Dealer</option>
+        <option value="2">Trustmark Dealer</option>
+      </select>
+       </div>
+          <div class="form-group col-md-12">
+       <label class="mr-sm-2" for="inlineFormCustomSelect">Transmission</label>
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="trans">
+        <option selected>Choose...</option>
+        <option value="0">Manual</option>
+        <option value="1">Automatic</option>
+        
+      </select>
+       </div>
+          <div class="form-group col-md-12">
+       <label class="mr-sm-2" for="inlineFormCustomSelect">Total No of Owner</label>
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="owner">
+        <option selected>Choose...</option>
+        <option value="0">Test Drive Car</option>
+        <option value="1">First Owner</option>
+        <option value="2">Second Owner</option>
+        <option value="3">Third Owner</option>
+        <option value="4">Fourth & Above Owner</option>
+      </select>
+       </div>
+    </div>
+
+    
+     </div>
+     <button type="submit" class="btn btn-outline-primary">Get Price</button>
+
+    
+    </div>
+<div class="container text-center">
+{% for ress in res %}
+<h2>Price of the car is : {{ress}}</h2>
+{% endfor %}
+    
+</div>
+  </div>
+</form>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="http
+    s://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
